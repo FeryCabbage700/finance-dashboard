@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Finance Dashboard</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>💰 Finance Dashboard</h1>
+</header>
+
+<main>
+
+  <!-- =======================
+  TOP STATS
+  ======================= -->
+
+  <section class="resume">
+
+    <div class="card">
+      <h3>Revenus</h3>
+      <p id="revenus">0€</p>
+    </div>
+
+    <div class="card">
+      <h3>Dépenses</h3>
+      <p id="depenses">0€</p>
+    </div>
+
+    <div class="card">
+      <h3>Solde</h3>
+      <p id="solde">0€</p>
+    </div>
+
+  </section>
+
+  <!-- =======================
+  FORM
+  ======================= -->
+
+  <section class="form">
+
+    <input type="text" id="montant" placeholder="Montant (12,50)">
+    <input type="text" id="label" placeholder="Description">
+    <input type="date" id="date">
+
+    <div class="actions">
+      <button id="add-revenu">+ Revenu</button>
+      <button id="add-depense">- Dépense</button>
+    </div>
+
+  </section>
+
+  <!-- =======================
+  FILTRE MOIS
+  ======================= -->
+
+  <section class="filters">
+
+    <input type="month" id="filter-month">
+
+  </section>
+
+  <!-- =======================
+  GRAPH
+  ======================= -->
+
+  <section class="graph">
+
+    <canvas id="chart" height="120"></canvas>
+
+  </section>
+
+  <!-- =======================
+  LIST TRANSACTIONS
+  ======================= -->
+
+  <section class="list">
+
+    <h2>Transactions</h2>
+
+    <div id="transactions"></div>
+
+  </section>
+
+  <!-- =======================
+  EXPORT
+  ======================= -->
+
+  <section class="export">
+
+    <button id="export-month">
+      Télécharger le mois
+    </button>
+
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>

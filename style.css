@@ -1,0 +1,171 @@
+body{
+  margin:0;
+  font-family:Arial;
+  background:#0f0f0f;
+  color:white;
+}
+
+/* =======================
+HEADER
+======================= */
+
+header{
+  padding:20px;
+  text-align:center;
+  background:#1a1a1a;
+}
+
+/* =======================
+LAYOUT PRINCIPAL
+======================= */
+
+main{
+  max-width:1000px;
+  margin:auto;
+  padding:20px;
+}
+
+/* =======================
+STATS (TOP CARDS)
+======================= */
+
+.resume{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:15px;
+}
+
+.card{
+  background:#1e1e1e;
+  padding:15px;
+  border-radius:10px;
+  text-align:center;
+  transition:0.2s;
+}
+
+.card:hover{
+  transform:translateY(-3px);
+}
+
+.card p{
+  font-size:22px;
+  font-weight:bold;
+}
+
+/* =======================
+FORM
+======================= */
+
+.form{
+  margin:30px 0;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+input{
+  padding:10px;
+  border-radius:8px;
+  border:none;
+  background:#1e1e1e;
+  color:white;
+  outline:none;
+}
+
+/* =======================
+BUTTONS
+======================= */
+
+.actions{
+  display:flex;
+  gap:10px;
+}
+
+button{
+  flex:1;
+  padding:12px;
+  border:none;
+  border-radius:8px;
+  background:#00bcd4;
+  color:white;
+  cursor:pointer;
+  transition:0.2s;
+}
+
+button:hover{
+  filter:brightness(1.1);
+  transform:scale(1.02);
+}
+
+/* =======================
+FILTER
+======================= */
+
+.filters{
+  margin:15px 0;
+}
+
+.filters input{
+  width:100%;
+}
+
+/* =======================
+GRAPH
+======================= */
+
+.graph{
+  margin:20px 0;
+}
+
+canvas{
+  width:100%;
+  background:#1e1e1e;
+  border-radius:10px;
+  padding:10px;
+}
+
+/* =======================
+TRANSACTIONS LIST
+======================= */
+
+.list{
+  margin-top:30px;
+}
+
+#transactions{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.item{
+  background:#1e1e1e;
+  padding:12px;
+  border-radius:8px;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+/* actions dans transaction */
+.item button{
+  flex:unset;
+  padding:6px 10px;
+  margin-left:5px;
+  font-size:12px;
+  border-radius:6px;
+}
+
+/* revenu / depense highlight */
+.item strong{
+  font-weight:bold;
+}
+
+/* =======================
+EXPORT SECTION
+======================= */
+
+.export{
+  margin-top:20px;
+}
